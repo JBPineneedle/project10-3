@@ -1,4 +1,4 @@
-package com.cookandroid.project8_2;
+package com.cookandroid.project10_1;
 
 import org.junit.Test;
 
