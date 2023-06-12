@@ -1,4 +1,4 @@
-package com.cookandroid.project10_2;
+package com.cookandroid.project10_3;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.pici_icon);
-        setTitle("명화 선호도 투표");
+        setTitle("명화 선호도 투표 (개선)");
 
         final int voteCount[] = new int[9];
         for (int i = 0; i < 9; i++)
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity  {
             image[index] = (ImageView) findViewById(imageId[index]);
             image[index].setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-
+                    // TODO Auto-generated method stub
                     // 투표수 증가.
                     voteCount[index]++;
                     Toast.makeText(getApplicationContext(),
@@ -60,4 +60,5 @@ public class MainActivity extends AppCompatActivity  {
         });
 
     }
+
 }

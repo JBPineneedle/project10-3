@@ -1,10 +1,11 @@
-package com.cookandroid.project10_2;
+package com.cookandroid.project10_3;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -21,6 +22,22 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int[] voteResult = intent.getIntArrayExtra("VoteCount");
         String[] imageName = intent.getStringArrayExtra("ImageName");
+
+        Integer imageFileId[] = { R.drawable.pic1, R.drawable.pic2,
+                R.drawable.pic3, R.drawable.pic4, R.drawable.pic5,
+                R.drawable.pic6, R.drawable.pic7, R.drawable.pic8,
+                R.drawable.pic9 };
+
+        // 1등 그림 이름과 그림 파일을 보여준다.
+        TextView tvTop = (TextView) findViewById(R.id.tvTop);
+        ImageView ivTop = (ImageView) findViewById(R.id.ivTop);
+        int maxEntry = 0;
+        for (int i = 1; i < voteResult.length; i++) {
+            if (voteResult[maxEntry] < voteResult[i])
+                maxEntry = i;
+        }
+        tvTop.setText(imageName[maxEntry]);
+        ivTop.setImageResource(imageFileId[maxEntry]);
 
         // 9개의 TextView, RatingBar 객체배열
         TextView tv[] = new TextView[imageName.length];
@@ -53,4 +70,5 @@ public class ResultActivity extends AppCompatActivity {
         });
 
     }
+
 }

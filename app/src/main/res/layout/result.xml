@@ -7,6 +7,28 @@
     <TableRow>
 
         <TextView
+            android:id="@+id/tvTop"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="## 우승 그림 : "
+            android:textSize="15dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/ivTop"
+            android:scaleType="fitCenter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_span="2"
+            android:src="@drawable/pic1" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
             android:id="@+id/tv1"
             android:layout_gravity="center_vertical"
             android:text="그림1"
@@ -14,7 +36,7 @@
 
         <RatingBar
             android:id="@+id/rbar1"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -31,7 +53,7 @@
 
         <RatingBar
             android:id="@+id/rbar2"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -48,7 +70,7 @@
 
         <RatingBar
             android:id="@+id/rbar3"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -65,7 +87,7 @@
 
         <RatingBar
             android:id="@+id/rbar4"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -82,7 +104,7 @@
 
         <RatingBar
             android:id="@+id/rbar5"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -99,7 +121,7 @@
 
         <RatingBar
             android:id="@+id/rbar6"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -116,7 +138,7 @@
 
         <RatingBar
             android:id="@+id/rbar7"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -133,7 +155,7 @@
 
         <RatingBar
             android:id="@+id/rbar8"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
@@ -150,7 +172,7 @@
 
         <RatingBar
             android:id="@+id/rbar9"
-            style="?android:attr/ratingBarStyleIndicator"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right" >
